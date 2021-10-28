@@ -54,13 +54,19 @@ console.log(totalCost);
 function megaFriend(friendsName){
     if (friendsName != ''){
         let maxName = friendsName[0];
-        for (let i = 0; i < friendsName.length; i++){
+        for (let i = 0; i < friendsName.length; i++)
             const element = friendsName[i];{
-                if (element.length > maxName){
+            if (element.length > maxName.length){
                     maxName = element;
-                }
             }
         }
+        return maxName;
+    }else{
+        return "Error";
     }
 }
+
+var friendsName = ["sader", "sagor", "shamim", "sujar",]
+var resultMegaFriend = megaFriend(friendsName);
+console.log(resultMegaFriend);
 
